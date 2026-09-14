@@ -1,4 +1,4 @@
-const CACHE_NAME = "ds-modo-silencio-v9";
+const CACHE_NAME = "ds-modo-silencio-v10";
 
 const VIDEO_ASSETS = [
   "./videos/slide-3.mp4",
