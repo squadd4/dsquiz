@@ -1,0 +1,14 @@
+{
+  "name": "dsquiz",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DS Automobiles — Modo Silêncio Web App & PWA para Vercel com Supabase",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1"
+  }
+}

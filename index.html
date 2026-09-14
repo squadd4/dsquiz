@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Experiência interativa DS Automobiles — Modo Silêncio.">
+  <title>DS Automobiles — Modo Silêncio</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <main id="quiz-app" aria-live="off">
+    <div id="experience" class="experience" data-current-slide="1">
+      <section class="slide slide--1 is-active" id="slide-1" data-slide="1" aria-hidden="false">
+        <h1 class="sr-only">Entre em Modo Silêncio</h1>
+        <button class="asset-button asset-button--primary" type="button" data-next="2" data-request-fullscreen aria-label="Iniciar experiência">
+          <img src="./png/Button.png" width="853" height="205" alt="Iniciar" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--2" id="slide-2" data-slide="2" aria-hidden="true" inert>
+        <h2 class="sr-only">E se pudéssemos mudar os sons do mundo?</h2>
+        <button class="asset-button asset-button--primary" type="button" data-next="3" aria-label="Escutar e continuar">
+          <img src="./png/Button-1.png" width="853" height="205" alt="Escutar" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--3 slide--video" id="slide-3" data-slide="3" aria-hidden="true" inert>
+        <div class="video-layer" aria-hidden="true">
+          <video id="video-3" playsinline preload="metadata" poster="./novas%20imagens/Slide%204k%20-%203.jpg"></video>
+        </div>
+        <button class="microphone-button" type="button" data-video-target="video-3" aria-label="Mudar o som e reproduzir o vídeo">
+          <img src="./novas%20imagens/button%20on.png" width="388" height="388" alt="Mudar o som" draggable="false">
+        </button>
+        <button class="asset-button asset-button--next" type="button" data-next="4" aria-label="Seguinte">
+          <img src="./png/Button-2.png" width="517" height="124" alt="Seguinte" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--4 slide--video" id="slide-4" data-slide="4" aria-hidden="true" inert>
+        <div class="video-layer" aria-hidden="true">
+          <video id="video-4" playsinline preload="metadata" poster="./novas%20imagens/Slide%204k%20-%204.jpg"></video>
+        </div>
+        <button class="microphone-button microphone-button--green" type="button" data-video-target="video-4" aria-label="Mudar o som e reproduzir o vídeo">
+          <img src="./novas%20imagens/button%20on-1.png" width="657" height="657" alt="Mudar o som" draggable="false">
+        </button>
+        <button class="asset-button asset-button--next" type="button" data-next="5" aria-label="Seguinte">
+          <img src="./png/Button-2.png" width="517" height="124" alt="Seguinte" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--5 slide--video" id="slide-5" data-slide="5" aria-hidden="true" inert>
+        <div class="video-layer" aria-hidden="true">
+          <video id="video-5" playsinline preload="metadata" poster="./jpeg/Slide%204k%20-%205.jpg"></video>
+        </div>
+        <button class="microphone-button microphone-button--delayed" type="button" data-delayed-microphone data-video-target="video-5" aria-label="Ativar modo silêncio e reproduzir o vídeo">
+          <img src="./png/button%20off-1.png" width="388" height="388" alt="Ativar modo silêncio" draggable="false">
+        </button>
+        <button class="asset-button asset-button--next" type="button" data-next="6" aria-label="Seguinte">
+          <img src="./png/Button-2.png" width="517" height="124" alt="Seguinte" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--6 slide--video" id="slide-6" data-slide="6" aria-hidden="true" inert>
+        <div class="video-layer" aria-hidden="true">
+          <video id="video-6" playsinline preload="metadata" poster="./jpeg/Slide%204k%20-%206.jpg"></video>
+        </div>
+        <button class="video-surface" type="button" data-video-target="video-6" aria-label="Reproduzir ou pausar o vídeo"></button>
+        <button class="asset-button asset-button--next" type="button" data-next="7" aria-label="Seguinte">
+          <img src="./png/Button-2.png" width="517" height="124" alt="Seguinte" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--7" id="slide-7" data-slide="7" aria-hidden="true" inert>
+        <h2 class="sr-only">O silêncio é uma escolha interior. E pode ser conduzida por si.</h2>
+        <button class="asset-button asset-button--next" type="button" data-next="10" aria-label="Seguinte">
+          <img src="./png/Button-2.png" width="517" height="124" alt="Seguinte" draggable="false">
+        </button>
+      </section>
+
+      <section class="slide slide--10" id="slide-10" data-slide="10" aria-hidden="true" inert>
+        <form class="lead-form" id="lead-form" novalidate>
+          <div class="form-field">
+            <label class="sr-only" for="nome">Nome e Apelido</label>
+            <input class="form-control" id="nome" name="nome" type="text" autocomplete="name" placeholder=" " maxlength="120" required>
+            <img class="form-placeholder form-placeholder--name" src="./novas%20imagens/Nome%20%26%20Apelido.png" width="333" height="46" alt="" aria-hidden="true" draggable="false">
+          </div>
+
+          <div class="form-field">
+            <label class="sr-only" for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder=" " maxlength="190" required>
+            <img class="form-placeholder form-placeholder--email" src="./novas%20imagens/Email.png" width="115" height="36" alt="" aria-hidden="true" draggable="false">
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="sr-only" for="telefone">Telefone</label>
+              <input class="form-control" id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder=" " maxlength="30" pattern="[+0-9() .-]{7,30}" required>
+              <img class="form-placeholder form-placeholder--phone" src="./novas%20imagens/Telefone.png" width="185" height="36" alt="" aria-hidden="true" draggable="false">
+            </div>
+            <div class="form-field">
+              <label class="sr-only" for="codigo-postal">Código Postal</label>
+              <input class="form-control" id="codigo-postal" name="codigo_postal" type="text" inputmode="numeric" autocomplete="postal-code" placeholder=" " maxlength="8" pattern="[0-9]{4}-[0-9]{3}" required>
+              <img class="form-placeholder form-placeholder--postal" src="./novas%20imagens/C%C3%B3digo%20Postal.png" width="292" height="48" alt="" aria-hidden="true" draggable="false">
+            </div>
+          </div>
+
+          <label class="privacy-consent">
+            <input id="confirmacao-dados" name="confirmacao_dados" type="checkbox" required>
+            <span>Tenho conhecimento e aceito as políticas de privacidade.</span>
+          </label>
+
+          <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+
+          <div class="form-actions">
+            <button class="asset-button form-submit" type="submit" data-test-drive="false" aria-label="Submeter formulário">
+              <img src="./novas%20imagens/Button-1.png" width="446" height="108" alt="Submeter" draggable="false">
+            </button>
+            <button class="asset-button form-submit" type="submit" data-test-drive="true" aria-label="Submeter e marcar test-drive">
+              <img src="./novas%20imagens/Button.png" width="507" height="108" alt="Marcar Test-Drive" draggable="false">
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="slide slide--8" id="slide-8" data-slide="8" aria-hidden="true" inert>
+        <h2 class="sr-only">Obrigado por participar</h2>
+        <button class="asset-button asset-button--primary" type="button" data-restart aria-label="Voltar ao início">
+          <img src="./png/Button-3.png" width="853" height="205" alt="Voltar ao início" draggable="false">
+        </button>
+      </section>
+
+      <button class="back-button is-hidden" id="back-button" type="button" aria-label="Voltar ao ecrã anterior" disabled>
+        <svg viewBox="0 0 68 68" aria-hidden="true" focusable="false">
+          <path d="M50 34H18M18 34l14-14M18 34l14 14"></path>
+        </svg>
+      </button>
+    </div>
+  </main>
+
+  <noscript>Esta experiência necessita de JavaScript para funcionar.</noscript>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@media (pointer: coarse) {
+  .asset-button,
+  .microphone-button,
+  .back-button,
+  .privacy-consent {
+    cursor: default;
+  }
+
+  .asset-button:hover,
+  .microphone-button:hover {
+    filter: none;
+  }
+
+  .asset-button:hover {
+    transform: none;
+  }
+
+  .asset-button--primary:hover {
+    transform: translateX(-50%);
+  }
+
+  .microphone-button:hover {
+    transform: translateX(-50%);
+  }
+
+  .back-button:hover {
+    opacity: .1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .form-control {
+    forced-color-adjust: none;
+  }
+}
