@@ -22,7 +22,8 @@ export default async function handler(req, res) {
 
     const { count, error } = await supabase
       .from("ds_silencio_leads")
-      .select("*", { count: "exact", head: true });
+      .select("id", { count: "exact" })
+      .limit(1);
 
     if (error) {
       return res.status(500).json({
