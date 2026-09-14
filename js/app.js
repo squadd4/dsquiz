@@ -50,6 +50,10 @@ function showSlide(slideNumber, { remember = true } = {}) {
   hideDelayedMicrophone("slide-5");
   pauseVideosExcept(target.id);
 
+  if (currentSlide === "3") {
+    void attemptVideoPlay("video-3");
+  }
+
   if (currentSlide === "5") {
     revealDelayedMicrophone("slide-5", 3000);
   }

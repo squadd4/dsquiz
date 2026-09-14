@@ -86,7 +86,7 @@ button {
 
 .slide--1 { background-image: url("../png/Slide%204k%20-%201.png"); }
 .slide--2 { background-image: url("../png/Slide%204k%20-%202.png"); }
-.slide--3 { background-image: url("../novas%20imagens/Slide%204k%20-%203.jpg"); }
+.slide--3 { background-image: none; background-color: var(--black); }
 .slide--4 { background-image: url("../novas%20imagens/Slide%204k%20-%204.jpg"); }
 .slide--5 { background-image: url("../png/Slide%204k%20-%205.png"); }
 .slide--6 { background-image: url("../png/Slide%204k%20-%206.png"); }
@@ -241,6 +241,18 @@ button {
 
 .video-layer video.is-ready,
 .video-layer video.is-playing {
+  opacity: 1;
+}
+
+.slide--3 .video-layer {
+  clip-path: none;
+}
+
+.slide--3 .video-layer::after {
+  display: none;
+}
+
+.slide--3 .video-layer video {
   opacity: 1;
 }
 
